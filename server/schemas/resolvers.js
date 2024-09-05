@@ -11,8 +11,15 @@ const { signToken } = require('../utils/auth');
 
 const resolvers = {
   Query: {
-    user: async () => {
-
+    user: async (parent, {_id, username}) => {
+      const params = (() => {
+        if (_id) {
+          return({_id: _id})
+        } else if (username) {
+          return ({username: username})
+        } else return({});
+      })
+      return User.findOne(params);
     },
 
   },
@@ -26,7 +33,7 @@ const resolvers = {
     saveBook: async () => {
 
     },
-    deleteBook: async () => {
+    removeBook: async () => {
 
     },
   },

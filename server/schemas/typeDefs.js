@@ -1,7 +1,5 @@
 /*  TODO:
 
-**Hint**: Use the functionality in the `user-controller.js` as a guide.
-
   * `typeDefs.js`: Define the necessary `Query` and `Mutation` types:
 
     * `Query` type:

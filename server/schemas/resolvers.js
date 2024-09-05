@@ -4,3 +4,32 @@
 
 
 
+// import models
+const { User } = require('../models');
+//import sign token
+const { signToken } = require('../utils/auth');
+
+const resolvers = {
+  Query: {
+    user: async () => {
+
+    },
+
+  },
+  Mutation: {
+    createUser: async () => {
+
+    },
+    login: async () => {
+
+    },
+    saveBook: async () => {
+
+    },
+    deleteBook: async () => {
+
+    },
+  },
+};
+
+module.exports = resolvers;

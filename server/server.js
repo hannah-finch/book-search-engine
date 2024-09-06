@@ -1,5 +1,7 @@
 // DONE: Implement the Apollo Server and apply it to the Express server as middleware.
 
+// TODO: add that line for middleware
+
 const express = require('express');
 const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');

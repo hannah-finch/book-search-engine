@@ -1,4 +1,4 @@
-/*  TODO:
+/*  DONE
 
   * `typeDefs.js`: Define the necessary `Query` and `Mutation` types:
 
@@ -72,7 +72,7 @@ const typeDefs = `
   }
 
   type Auth {
-    token: String
+    token: ID!
     user: User
   }
 `;
